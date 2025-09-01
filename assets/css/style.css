@@ -30,4 +30,215 @@ body {
   padding-bottom: 4rem;
 }
 
+header{
+  background: var(--accent);
+  color:var(--dark);
+  font-family: var(--font-main);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+}
+.header-line{
+  display: flex;
+  justify-content:space-between;
+  background: var(--dark);
+  padding: 10px 20px;
+  box-shadow: 0px 10px 15px #ffcc02;
+}
 
+nav{
+  display: flex ;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: 20px;
+}
+
+nav a:hover{
+  background-color: var(--accent);
+  font-size: 25px;
+  font-style: italic;
+  color: var(--dark);
+  border-radius: 5%;
+  padding: 5px;
+}
+
+.hero-section{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
+  margin: 50px;
+}
+
+.hero-pic-title{
+  max-width: 400px;
+  max-height: 400px;
+  align-items: center;
+  font-family: var(--font-main);
+  font-size: 10px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.Fin-pic{
+  display: flex;
+  justify-self: start;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.title {
+  padding-top: 10px;
+}
+
+.hero-discription{
+  padding: 50px;
+  font-family: var(--font-main);
+  font-size: 15px;
+}
+.runes-section{
+  display: flex;
+  justify-content:space-between;
+  margin: 50px;
+  gap: 30px;
+}
+
+.section-title{
+  font-size: 20px;
+  color: var(--light);
+  font-family: var(--font-main);
+  font-weight: bold; 
+}
+
+.runes-container{
+  border-left: 5px solid var(--accent);
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+.rune:hover{
+  box-shadow: 0px 0px 15px #ffcc02;
+}
+.rune5:hover{
+  box-shadow: 0px 0px 15px #ffcc02;
+}
+.runes-row1{
+  display: flex;
+}
+.runes-row2{
+  display: flex;
+}
+
+.rune{
+  display: flex;
+   width: 400px;
+   height: 200px;
+   gap: 10px;
+   margin: 0 10px 10px 10px;
+   border: 5px solid var(--accent);
+   border-radius: 15px;
+}
+.rune5{
+  height: 200px;
+  width: 820px;
+  gap: 10px;
+  margin: 10px;
+  border: 5px solid var(--accent);
+  border-radius: 15px;
+}
+.directions{
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-between;
+  column-gap: 70px;
+  margin: 50px;
+}
+.direction-title{
+  font-size: 15px;
+  width: 200px;
+  color: var(--light);
+  font-family: var(--font-main);
+  font-weight: bold;
+}
+
+.instruction {
+  display: flex;
+  font-size: 15px;
+  font-family: var(--font-main);
+  color:var(--muted);
+  margin-left: 216px;
+}
+
+.footer-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1083px;
+  margin: 50px;
+}
+.send-ravin{
+  font-size: 30px;
+  width: 200px;
+  color: var(--light);
+  font-family: var(--font-main);
+  font-weight: bold;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  border-left: 5px solid var(--accent);
+  font-family: var(--font-main);
+  margin-left: 0px;
+  padding-left: 30px;
+}
+.Navbar2 a{
+  display:flex;
+  justify-content: space-evenly;
+  background-color: var(--accent);
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--dark);
+  border-radius: 5%;
+  padding: 5px;
+}
+.Navbar2 a:hover{
+  background-color: var(--dark);
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--accent);
+  border-radius: 5%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .rune {
+    width: 50%;
+  }
+  .rune5{
+    width: 50%;
+  }
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .rune {
+    width: 100%;
+  }
+  .rune5{
+    width: 100%;
+  }
+}
